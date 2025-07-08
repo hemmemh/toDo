@@ -1,0 +1,30 @@
+
+.main{
+    padding: 5px 10px;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    flex: 1 1 auto;
+    font-size: 20px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.actions{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}

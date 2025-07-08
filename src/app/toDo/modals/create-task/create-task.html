@@ -1,0 +1,30 @@
+<div class="main">
+    <div class="body">
+        <div class="header">
+            <div class="title">Создать задачу</div>
+            <button (click)="close()" matIconButton aria-label="закрыть">
+              <mat-icon>close</mat-icon>
+            </button>
+        </div>
+        <form [formGroup]="taskForm" >
+            <div class="inputs">
+                <mat-form-field>
+                  <mat-label>Имя задачи</mat-label>
+                  <input formControlName="name" matInput>
+                   @if (taskForm.get('name')?.hasError('required')) {
+                     <mat-error>Обязательное поле</mat-error>
+                   }
+                </mat-form-field>
+                <mat-form-field>
+                  <mat-label>Описание задачи</mat-label>
+                  <textarea matInput  formControlName="desc"  ></textarea>
+                  <input matInput>
+                </mat-form-field>
+            </div>
+            <div class="actions">
+                <button (click)="close()" matButton>Отмена</button>
+                <button [disabled]="taskForm.invalid"   matButton>Создать</button>
+            </div>
+        </form>
+    </div>
+</div>
