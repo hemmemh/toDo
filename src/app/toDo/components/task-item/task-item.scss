@@ -1,0 +1,29 @@
+.main{
+    border: var(--primary-color) 2px solid;
+    border-radius: 13px;
+    box-shadow: 2px 2px 12px 0px rgba(66, 68, 90, 1);
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+}
+
+.top{
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    border-bottom: var(--primary-color) 2px solid;
+}
+
+.name{
+    flex: 1 1 auto;
+}
+
+.bottom{
+        padding: 10px 20px;
+        display: flex;
+}
+.desc{
+    flex: 1 1 auto;
+}
