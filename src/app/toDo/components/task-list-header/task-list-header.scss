@@ -1,0 +1,16 @@
+.main{
+    background: var(--dark-blue-color);
+    height: 60px;
+    color:var(--text-color)
+}
+
+.body{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.title{
+    font-size: 24px;
+    font-weight: 600;
+}
