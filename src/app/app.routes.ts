@@ -6,5 +6,5 @@ export const routes: Routes = [
 
      {component:TaskList, path:'tasks'},
      {component:TaskInfo, path:'tasks/:id'},
-     {path:'**', redirectTo:''}
+     {path:'**', redirectTo:'tasks'}
 ];
