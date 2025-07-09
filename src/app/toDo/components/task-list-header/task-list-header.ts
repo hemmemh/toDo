@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Container } from '../container/container';
+import { ActivatedRoute, Router, UrlSegment } from '@angular/router';
 
 @Component({
   selector: 'app-task-list-header',
@@ -7,6 +8,8 @@ import { Container } from '../container/container';
   templateUrl: './task-list-header.html',
   styleUrl: './task-list-header.scss'
 })
-export class TaskListHeader {
+export class TaskListHeader{
+
+
 
 }

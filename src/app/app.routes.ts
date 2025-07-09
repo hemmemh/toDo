@@ -4,7 +4,7 @@ import { TaskInfo } from './toDo/pages/task-info/task-info';
 
 export const routes: Routes = [
 
-     {component:TaskList, path:''},
-     {component:TaskInfo, path:'task-info/:id'},
+     {component:TaskList, path:'tasks'},
+     {component:TaskInfo, path:'tasks/:id'},
      {path:'**', redirectTo:''}
 ];
