@@ -6,9 +6,9 @@
                 <mat-icon>arrow_back</mat-icon>
             </button>
         </div>
-           <div  class="name">Имя задачи</div>
-           <div class="desc">Описание</div>
-           <div class="closed">Не выполнено</div>
+           <div  class="name">Имя задачи: {{task?.name}}</div>
+           <div class="desc">Описание: {{task?.desc}}</div>
+           <div class="closed">Выполнено: {{task?.closed ? 'Да' : 'Нет'}}</div>
        </div>
     </app-container>
 

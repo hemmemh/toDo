@@ -1,18 +1,18 @@
 <div class="main">
     <div class="body">
         <div class="top">
-            <div class="name">Имя задачи</div>
+            <div class="name">Имя задачи: {{task.name}}</div>
             <div class="actions">
-                <button matButton>Подробнее</button>
-                <button matIconButton aria-label="удалить">
+                <button [routerLink]="`/tasks/${task.id}`" matButton>Подробнее</button>
+                <button (click)="delete()" matIconButton aria-label="удалить">
                     <mat-icon>delete</mat-icon>
                 </button>
             </div>
         </div>
         <div class="bottom">
-            <div class="desc">Описание</div>
+            <div class="desc">Описание: {{task.desc}}</div>
             <div class="check">
-                <mat-checkbox class="check-box"></mat-checkbox>
+                <mat-checkbox (click)="update()" [checked]="task.closed" class="check-box"></mat-checkbox>
             </div>
         </div>
     </div>

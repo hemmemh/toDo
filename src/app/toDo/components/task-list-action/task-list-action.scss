@@ -1,6 +1,13 @@
 .body{
     padding: 5px 10px;
+    gap: 20px;
     display: flex;
     align-items: center;
 
+}
+
+
+
+.button{
+    align-self: flex-start;
 }

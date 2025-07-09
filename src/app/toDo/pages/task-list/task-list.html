@@ -1,8 +1,14 @@
 <div class="main">
     <div class="body">
-        <app-task-list-action/>
+        <app-task-list-action (onInputEmit)="onSearch($event)"/>
         <div class="task-list">
-            <app-task-item/>
+            @if (tasksFiltered.length === 0) {
+                <div class="no-tasks">Нет задач</div>
+            }
+            @for (task of tasksFiltered; track task.id) {
+                <app-task-item [task]="task"/>
+            }
+            
         </div>
     </div>
 </div>

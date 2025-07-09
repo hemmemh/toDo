@@ -1,9 +1,12 @@
 <div class="main">
     <div class="body">
-      <button (click)="openDialog()" matFab extended>
+      <button class="button" (click)="openDialog()" matFab extended>
         <mat-icon>add</mat-icon>
           Создать задачу
       </button>
-
+      <mat-form-field >
+        <mat-label>Поиск...</mat-label>
+        <input (input)="onInput($event)" matInput>
+      </mat-form-field>
     </div>
 </div>
