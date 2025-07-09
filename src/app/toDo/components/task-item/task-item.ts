@@ -23,6 +23,6 @@ export class TaskItem {
   }
 
   update(){
-    this.todoService.update({...this.task, closed:!closed})
+    this.todoService.update({...this.task, closed:!this.task.closed})
   }
 }
